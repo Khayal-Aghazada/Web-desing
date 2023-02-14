@@ -1,0 +1,41 @@
+.btn{
+    margin: 2rem;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    background-image: linear-gradient(45deg, #141e30 0%, #243b55 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.5s;
+    border-radius: 0.5s;
+}
+
+.btn * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+}
+
+.btn i {
+    opacity: 0;
+}
+
+.btn:focus{
+    width: 30px;
+    background-image: linear-gradient(45deg, #00c9ff 0%, #92fe3d 100%);
+    border-radius: 50px;
+}
+
+.btn:focus span{
+    opacity: 0;
+}
+
+.btn:focus i {
+    opacity: i;
+    transition-delay: 0.5s;
+}   
